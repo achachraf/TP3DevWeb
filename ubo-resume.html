@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/cbu2apl.css">
     <title>Mon CV</title>
-
 </head>
 <body>
     <div itemscope itemtype="https://schema.org/Person" id="wrapper">
@@ -51,21 +50,66 @@
         </article>
         <hr>
         <dl>
+            <!-- <i class="fas fa-plus-square"></i> -->
             <dt>Formation: </dt>
-            <dd><b>2015/2016</b> Baccalaureat Sciences Physiques</dd>
-            <dd><b>2016-2020</b> Eleve ingénieur à l'ENSA de Tanger</dd>
-            <dd><b>2020/2021</b> Master DOSI Double Diplomation à l'UBO </dd>
+            <dd class="formation">
+                <button onclick="showDetails(event)">+</button>
+                <b>2015/2016</b> Baccalaureat Sciences Physiques 
+                <p style="display: none; height: 0px;">
+                    J'ai eu mon BAC au lycée Ibn-Batouta de Tanger en Sciences Physiques avec une mention très bien
+                </p>
+            </dd>
+            <dd class="formation">
+                <button onclick="showDetails(event)">+</button>
+                <b>2016-2020</b> Eleve ingénieur à l'ENSA de Tanger
+                <p style="display: none; height: 0px">
+                    J'ai fait 2 années des classes préparatoire à l'ENSA de Tanger pendant 2016/2017 et 2017/2018
+                </p>
+            </dd>
+            <dd class="formation">
+                <button onclick="showDetails(event)">+</button>
+                <b>2020/2021</b> Master DOSI Double Diplomation à l'UBO 
+                <p style="display: none; height: 0px">
+                    En profitant de la double diplomation, j'ai partie au Brest pour faire un M2 DOSI
+                </p>
+            </dd>
             
             <dt>Langues</dt>
             <dd><strong>Français: </strong>Courantes</dd>
             <dd><strong>Anglais: </strong>Courantes</dd>
             <dd><strong>Arabe: </strong>Langues maternelle</dd>
 
-            <dt>Hobbies</dt>
-            <dd><i>Piano</i></dd>
-            <dd><i>Math</i></dd>
-            <dd><i>Sciences</i></dd>
-            <dd><i>Football</i></dd>
+            <dt>Skills</dt>
+            <dd>
+                <i class="skill">
+                    C/C++
+                    <span class="tooltip">Systems programming and Competivive Programing</span>
+                </i>
+            </dd>
+            <dd>
+                <i class="skill">
+                    Java SE, JEE
+                    <span class="tooltip">Desktop Applications (Sockets), Web Apps</span>
+                </i >
+            </dd>
+            <dd>
+                <i class="skill">
+                    HTML/CSS/Javascript
+                    <span class="tooltip">Frontend Developpement and Design</span>
+                </i>
+            </dd>
+            <dd>
+                <i class="skill">
+                    React JS
+                    <span class="tooltip">Moderne Frontend Developpement</span>
+                </i>
+            </dd>
+            <dd>
+                <i class="skill">
+                    Node.js
+                    <span class="tooltip">Backend Developpement (Javascript)</span>
+                </i>
+            </dd>
         </dl>
         <footer>
             <h2>Liens utils</h2>
@@ -79,4 +123,53 @@
     </div>
 
 </body>
+
+<script>
+    const showDetails = (e)=>{
+        let details = e.target.parentElement.getElementsByTagName("p")[0]
+        if(details.style.display === "none"){
+            console.log("display: "+details.style.display);
+            e.target.parentElement.getElementsByTagName("p")[0].style.display = ""
+            setTimeout(()=>{
+                e.target.parentElement.getElementsByTagName("p")[0].style.height = "34px"
+                e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "1";
+            },10)
+            e.target.textContent = "-"
+
+        }
+        else{
+            e.target.parentElement.getElementsByTagName("p")[0].style.height = "0px"
+            e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "0";
+            setTimeout(()=>{
+                e.target.parentElement.getElementsByTagName("p")[0].style.display = "none";
+            },600)
+            e.target.textContent = "+"
+        }
+
+        let formations = document.getElementsByClassName("formation");
+        for(let formation of formations){
+            if(formation != e.target.parentElement){
+                formation.getElementsByTagName("p")[0].style.height = "0px";
+                e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "0";
+                setTimeout(()=>{
+                    formation.getElementsByTagName("p")[0].style.display = "none";
+                },10)
+                formation.getElementsByTagName("button")[0].textContent = "+"
+            }
+        }
+    }
+
+    let tooltips = document.getElementsByClassName("tooltip");
+    
+    
+    const followMouse = (e)=>{
+        for(let tooltip of tooltips){
+            tooltip.style.left = e.pageX + "px";
+            tooltip.style.right = e.pageY + "px";
+        }
+    }
+
+    document.addEventListener("mousemove",followMouse,false)
+</script>
+
 </html>
