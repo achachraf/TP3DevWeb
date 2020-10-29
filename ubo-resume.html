@@ -1,175 +1,306 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="A propos de moi">
-    <meta name="keywords" content="web,developer,resume">
-    <meta name="author" content="ACHKARI BEGDOURI">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="A propos de moi" />
+    <meta name="keywords" content="web,developer,resume" />
+    <meta name="author" content="ACHKARI BEGDOURI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--[if it ET 9]-->
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
-    <link rel="stylesheet" href="css/resume.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/resume.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/fontawesome.min.css" /> -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.typekit.net/cbu2apl.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/cbu2apl.css" />
     <title>Mon CV</title>
-</head>
-<body>
+  </head>
+  <body>
     <div itemscope itemtype="https://schema.org/Person" id="wrapper">
-        <header>
-            <div class="container">
-                <div class="title">
-                    <h1 itemprop="name">Achraf ACHKARI BEGDOURI</h1>
-                    <h2 itemprop="description">Etudiant en M2 Développement Logiciel des Systèmes d'Information</h2>
-                </div>
-                <div class="image">
-                    <img itemprop="image" src="me.jpg" width="200" height="200" />
-                </div>
+      <header>
+        <div class="container">
+          <div class="title">
+            <h1 itemprop="name">Achraf ACHKARI BEGDOURI</h1>
+            <h2 itemprop="description">
+              Etudiant en M2 Développement Logiciel des Systèmes d'Information
+            </h2>
+          </div>
+          <div class="image">
+            <img itemprop="image" src="me.jpg" width="200" height="200" />
+          </div>
+        </div>
+      </header>
+      <h3 class="lead">More info</h3>
+      <ul>
+        <li>
+          <i class="fas fa-map-marker-alt"></i><strong>&nbsp Adresse: </strong>4
+          Rue des archives
+        </li>
+        <li>
+          <i class="fas fa-table"></i
+          ><strong>&nbsp Date de naissance: </strong>14/02/1999
+        </li>
+        <li>
+          <i class="fas fa-envelope-square"></i
+          ><strong>&nbsp email: </strong>achrafachkari@gmail.com
+        </li>
+        <li>
+          <i class="fas fa-globe"></i><strong>&nbsp Nationalité: </strong>Maroc
+        </li>
+        <li>
+          <i class="fab fa-facebook-square"></i><strong>&nbsp Facebook: </strong
+          ><a href="https://www.linkedin.com/in/achraf-achkari/"
+            >in/achraf-achkari/</a
+          >
+        </li>
+      </ul>
 
-            </div>
-        </header>
-        <h3 class="lead">More info</h3>
+      <article>
+        <p><strong class="lead">Presentation: </strong></p>
+        Je suis un FullStack Developper, etudiant à l'UBO en double diplomation
+        avec l'ENSA de Tanger. J'ai travaillé des differents projets dans le WEB
+        avec MERN stack.
+      </article>
+      <article>
+        <p><strong class="lead">Experiences Professionnelle</strong></p>
+        J'ai réalisé un stage d'application à la fin de ma 1ère année cycle
+        d'ingénieur à l'entreprise Amendis qui fait appartient au group VEOLIA.
+      </article>
+      <hr />
+      <dl>
+        <!-- <i class="fas fa-plus-square"></i> -->
+        <dt>Formation:</dt>
+        <dd class="formation">
+          <button onclick="showDetails(event)">+</button>
+          <b>2015/2016</b> Baccalaureat Sciences Physiques
+          <p style="display: none; height: 0px">
+            J'ai eu mon BAC au lycée Ibn-Batouta de Tanger en Sciences Physiques
+            avec une mention très bien
+          </p>
+        </dd>
+        <dd class="formation">
+          <button onclick="showDetails(event)">+</button>
+          <b>2016-2020</b> Eleve ingénieur à l'ENSA de Tanger
+          <p style="display: none; height: 0px">
+            J'ai fait 2 années des classes préparatoire à l'ENSA de Tanger
+            pendant 2016/2017 et 2017/2018
+          </p>
+        </dd>
+        <dd class="formation">
+          <button onclick="showDetails(event)">+</button>
+          <b>2020/2021</b> Master DOSI Double Diplomation à l'UBO
+          <p style="display: none; height: 0px">
+            En profitant de la double diplomation, j'ai partie au Brest pour
+            faire un M2 DOSI
+          </p>
+        </dd>
+
+        <dt>Langues</dt>
+        <dd><strong>Français: </strong>Courantes</dd>
+        <dd><strong>Anglais: </strong>Courantes</dd>
+        <dd><strong>Arabe: </strong>Langues maternelle</dd>
+
+        <dt>Skills</dt>
+        <dd>
+          <i class="skill">
+            C/C++
+            <span class="tooltip"
+              >Systems programming and Competivive Programing</span
+            >
+          </i>
+        </dd>
+        <dd>
+          <i class="skill">
+            Java SE, JEE
+            <span class="tooltip"
+              >Desktop Applications (Sockets), Web Apps</span
+            >
+          </i>
+        </dd>
+        <dd>
+          <i class="skill">
+            HTML/CSS/Javascript
+            <span class="tooltip">Frontend Developpement and Design</span>
+          </i>
+        </dd>
+        <dd>
+          <i class="skill">
+            React JS
+            <span class="tooltip">Moderne Frontend Developpement</span>
+          </i>
+        </dd>
+        <dd>
+          <i class="skill">
+            Node.js
+            <span class="tooltip">Backend Developpement (Javascript)</span>
+          </i>
+        </dd>
+      </dl>
+
+      <h3>Histogramme des competences</h3>
+      <canvas id="histo" width="600" height="400"></canvas>
+
+      <footer>
+        <h2>Liens utils</h2>
         <ul>
-            <li><i class="fas fa-map-marker-alt"></i><strong>&nbsp Adresse: </strong>4 Rue des archives</li>
-            <li><i class="fas fa-table"></i><strong>&nbsp Date de naissance: </strong>14/02/1999</li>
-            <li><i class="fas fa-envelope-square"></i><strong>&nbsp email: </strong>achrafachkari@gmail.com</li>
-            <li><i class="fas fa-globe"></i><strong>&nbsp Nationalité: </strong>Maroc</li>
-            <li><i class="fab fa-facebook-square"></i><strong>&nbsp Facebook: </strong><a href="https://www.linkedin.com/in/achraf-achkari/">in/achraf-achkari/</a></li>
+          <li>
+            Linkdein:
+            <a
+              target="_blanc"
+              href="https://www.linkedin.com/in/achraf-achkari/"
+              >achraf-achkari</a
+            >
+          </li>
+          <li>
+            Github:
+            <a target="_blanc" href="https://github.com/achrafxx/">achrafxx</a>
+          </li>
+          <li>Twitter: <a target="_blanc" href="#">achraf achkari</a></li>
+          <li>
+            Facebook:
+            <a target="_blanc" href="https://www.facebook.com/achraf.achkari"
+              >achraf achkari</a
+            >
+          </li>
         </ul>
-
-        <article>
-            <p><strong class="lead">Presentation: </strong></p>
-            Je suis un FullStack Developper, etudiant à l'UBO en double diplomation avec l'ENSA de Tanger.
-            J'ai travaillé des differents projets dans le WEB avec MERN stack.
-        </article>
-        <article>
-            <p><strong class="lead">Experiences Professionnelle</strong></p>
-            J'ai réalisé un stage d'application à la fin de ma 1ère année cycle d'ingénieur à l'entreprise Amendis qui fait appartient au group VEOLIA.
-        </article>
-        <hr>
-        <dl>
-            <!-- <i class="fas fa-plus-square"></i> -->
-            <dt>Formation: </dt>
-            <dd class="formation">
-                <button onclick="showDetails(event)">+</button>
-                <b>2015/2016</b> Baccalaureat Sciences Physiques 
-                <p style="display: none; height: 0px;">
-                    J'ai eu mon BAC au lycée Ibn-Batouta de Tanger en Sciences Physiques avec une mention très bien
-                </p>
-            </dd>
-            <dd class="formation">
-                <button onclick="showDetails(event)">+</button>
-                <b>2016-2020</b> Eleve ingénieur à l'ENSA de Tanger
-                <p style="display: none; height: 0px">
-                    J'ai fait 2 années des classes préparatoire à l'ENSA de Tanger pendant 2016/2017 et 2017/2018
-                </p>
-            </dd>
-            <dd class="formation">
-                <button onclick="showDetails(event)">+</button>
-                <b>2020/2021</b> Master DOSI Double Diplomation à l'UBO 
-                <p style="display: none; height: 0px">
-                    En profitant de la double diplomation, j'ai partie au Brest pour faire un M2 DOSI
-                </p>
-            </dd>
-            
-            <dt>Langues</dt>
-            <dd><strong>Français: </strong>Courantes</dd>
-            <dd><strong>Anglais: </strong>Courantes</dd>
-            <dd><strong>Arabe: </strong>Langues maternelle</dd>
-
-            <dt>Skills</dt>
-            <dd>
-                <i class="skill">
-                    C/C++
-                    <span class="tooltip">Systems programming and Competivive Programing</span>
-                </i>
-            </dd>
-            <dd>
-                <i class="skill">
-                    Java SE, JEE
-                    <span class="tooltip">Desktop Applications (Sockets), Web Apps</span>
-                </i >
-            </dd>
-            <dd>
-                <i class="skill">
-                    HTML/CSS/Javascript
-                    <span class="tooltip">Frontend Developpement and Design</span>
-                </i>
-            </dd>
-            <dd>
-                <i class="skill">
-                    React JS
-                    <span class="tooltip">Moderne Frontend Developpement</span>
-                </i>
-            </dd>
-            <dd>
-                <i class="skill">
-                    Node.js
-                    <span class="tooltip">Backend Developpement (Javascript)</span>
-                </i>
-            </dd>
-        </dl>
-        <footer>
-            <h2>Liens utils</h2>
-            <ul>
-                <li>Linkdein: <a target="_blanc" href="https://www.linkedin.com/in/achraf-achkari/">achraf-achkari</a></li>
-                <li>Github: <a target="_blanc" href="https://github.com/achrafxx/">achrafxx</a></li>
-                <li>Twitter: <a target="_blanc" href="#">achraf achkari</a></li>
-                <li>Facebook: <a target="_blanc" href="https://www.facebook.com/achraf.achkari">achraf achkari</a></li>
-            </ul>
-        </footer>
+      </footer>
     </div>
+  </body>
 
-</body>
+  <script>
+    let skillsEval = [
+      { name: "C/C++", rate: 4 },
+      { name: "Java", rate: 4 },
+      { name: "Design", rate: 3 },
+      { name: "React JS", rate: 5 },
+      { name: "Node.js", rate: 5 },
+    ];
 
-<script>
-    const showDetails = (e)=>{
-        let details = e.target.parentElement.getElementsByTagName("p")[0]
-        if(details.style.display === "none"){
-            console.log("display: "+details.style.display);
-            e.target.parentElement.getElementsByTagName("p")[0].style.display = ""
-            setTimeout(()=>{
-                e.target.parentElement.getElementsByTagName("p")[0].style.height = "34px"
-                e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "1";
-            },10)
-            e.target.textContent = "-"
+    const addStars = (element, stars) => {
+      for (let i = 0; i < stars; i++) {
+        let star = document.createElement("i");
+        star.setAttribute("class", "fas fa-star");
+        element.parentElement.appendChild(star);
+      }
+    };
 
+    window.onload = () => {
+      let skills = document.getElementsByClassName("skill");
+      for (let i = 0; i < skillsEval.length; i++) {
+        addStars(skills[i], skillsEval[i].rate);
+      }
+    };
+
+    const showDetails = (e) => {
+      let details = e.target.parentElement.getElementsByTagName("p")[0];
+      if (details.style.display === "none") {
+        console.log("display: " + details.style.display);
+        e.target.parentElement.getElementsByTagName("p")[0].style.display = "";
+        setTimeout(() => {
+          e.target.parentElement.getElementsByTagName("p")[0].style.height =
+            "45px";
+          e.target.parentElement.getElementsByTagName("p")[0].style.opacity =
+            "1";
+        }, 10);
+        e.target.textContent = "-";
+      } else {
+        e.target.parentElement.getElementsByTagName("p")[0].style.height =
+          "0px";
+        e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "0";
+        setTimeout(() => {
+          e.target.parentElement.getElementsByTagName("p")[0].style.display =
+            "none";
+        }, 600);
+        e.target.textContent = "+";
+      }
+
+      let formations = document.getElementsByClassName("formation");
+      for (let formation of formations) {
+        if (formation != e.target.parentElement) {
+          formation.getElementsByTagName("p")[0].style.height = "0px";
+          e.target.parentElement.getElementsByTagName("p")[0].style.opacity =
+            "0";
+          setTimeout(() => {
+            formation.getElementsByTagName("p")[0].style.display = "none";
+          }, 10);
+          formation.getElementsByTagName("button")[0].textContent = "+";
         }
-        else{
-            e.target.parentElement.getElementsByTagName("p")[0].style.height = "0px"
-            e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "0";
-            setTimeout(()=>{
-                e.target.parentElement.getElementsByTagName("p")[0].style.display = "none";
-            },600)
-            e.target.textContent = "+"
-        }
-
-        let formations = document.getElementsByClassName("formation");
-        for(let formation of formations){
-            if(formation != e.target.parentElement){
-                formation.getElementsByTagName("p")[0].style.height = "0px";
-                e.target.parentElement.getElementsByTagName("p")[0].style.opacity = "0";
-                setTimeout(()=>{
-                    formation.getElementsByTagName("p")[0].style.display = "none";
-                },10)
-                formation.getElementsByTagName("button")[0].textContent = "+"
-            }
-        }
-    }
+      }
+    };
 
     let tooltips = document.getElementsByClassName("tooltip");
-    
-    
-    const followMouse = (e)=>{
-        for(let tooltip of tooltips){
-            tooltip.style.left = e.pageX + "px";
-            tooltip.style.right = e.pageY + "px";
-        }
+
+    const followMouse = (e) => {
+      for (let tooltip of tooltips) {
+        tooltip.style.left = e.pageX + "px";
+        tooltip.style.right = e.pageY + "px";
+      }
+    };
+
+    document.addEventListener("mousemove", followMouse, false);
+
+    const generateRec = (context, x, y, width, height, color = "yellow") => {
+      context.strokeStyle = "black";
+      context.fillStyle = "yellow";
+      context.fillRect(x, y, width, height);
+    };
+    var canvas, context, canvaso, contexto;
+    canvaso = document.getElementById("histo");
+    context = canvaso.getContext("2d");
+    context.lineWidth = 5;
+
+    let x = 110,
+      y = 328;
+    let stepX = 0,
+      stepY = 0;
+
+    let rates = [5, 5, 3, 4, 2];
+    // y = y+rates[0]*13
+
+    for (elm of rates) {
+      generateRec(context, x + stepX, y - elm * 25, 40, elm * 25);
+      stepX += 70;
     }
 
-    document.addEventListener("mousemove",followMouse,false)
-</script>
+    context.font = "bold 20px arial";
+    context.fillStyle = "black";
 
+    let descs = ["Basique", "Amateur", "Courant", "Maitrise", "Expert"];
+
+    context.fillText("Niveau", 15, 100);
+
+    context.font = "bold 17px arial";
+    for (let i = 1; i <= 5; i++) {
+      context.fillText(descs[i - 1], 10, 345 - 28 * i);
+    }
+
+    context.font = "bold 20px arial";
+    context.fillText("skill", 470, 330);
+
+    context.font = "bold 13px arial";
+
+    for (let i = 0; i < skillsEval.length; i++) {
+      context.fillText(skillsEval[i].name, 115 + 70 * i, 350);
+    }
+
+    context.strokeStyle = "#000000";
+    context.beginPath();
+    context.moveTo(90, 90);
+    context.lineTo(90, 332);
+    context.stroke();
+    context.closePath();
+
+    context.strokeStyle = "#000000";
+    context.beginPath();
+    context.moveTo(90, 330);
+    context.lineTo(450, 328);
+    context.stroke();
+    context.closePath();
+  </script>
 </html>

@@ -75,6 +75,10 @@ dt{
     margin-bottom: 0px;
 }
 
+.formation button{
+    margin-bottom: 10px;
+}
+
 .tooltip{
     display: none;
     background: black;
@@ -102,4 +106,14 @@ dt{
     cursor: pointer;
     padding-left: 10px;
     padding-right: 10px;
+}
+
+.fa-star{
+    font-size: 20px;
+    margin-left: 5px;
+    color: yellow;
+}
+
+#histo{
+    margin-top: -80px;
 }
